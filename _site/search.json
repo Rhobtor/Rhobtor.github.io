@@ -42,39 +42,46 @@
     "text": "Field robotics\nAutonomous navigation\nUnmanned ground vehicles\nTerrain-aware planning and control\n2.5D elevation mapping\nRobotic perception\nROS 2 and robotic software systems\nEmbedded GPU deployment\nSearch and rescue robotics"
   },
   {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
+    "objectID": "about.html#links",
+    "href": "about.html#links",
     "title": "About",
-    "section": "Contact",
-    "text": "Contact\nEmail: luismidp7@gmail.com\nGitHub: https://github.com/rhobtor"
+    "section": "",
+    "text": "GitHub: https://github.com/Rhobtor\nUniversity of Málaga profile: coming soon\nLinkedIn: coming soon\nEmail: luismidp7@gmail.com"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Luis Miguel Díaz Pichardo",
     "section": "",
-    "text": "PhD Student in Robotics and Mechatronics\nUniversity of Málaga\nI work on field robotics, terrain-aware navigation, robotic perception, ROS 2 systems, and real-world unmanned ground vehicles.\nThis website collects my academic work, research projects, publications, software, and technical notes developed during my PhD.\nGitHub Publications Research Projects"
+    "text": "PhD Student in Robotics and Mechatronics\nUniversity of Málaga\nI work on field robotics, terrain-aware navigation, robotic perception, ROS 2 systems, and real-world unmanned ground vehicles.\nThis website collects my academic work, research projects, publications, software, and technical notes developed during my PhD.\nGitHub Research Projects Publications"
   },
   {
-    "objectID": "index.html#current-research",
-    "href": "index.html#current-research",
+    "objectID": "index.html#rhobtor",
+    "href": "index.html#rhobtor",
     "title": "Luis Miguel Díaz Pichardo",
-    "section": "Current research",
-    "text": "Current research\n\nTerrain-aware reactive navigation for unmanned ground vehicles.\n2.5D elevation mapping and traversability estimation.\nMPPI-based local control guided by learned path refinement.\nRGB-T perception for search and rescue robotics.\nROS 2, Docker, Jetson, LiDAR, ZED cameras, and real robot deployment."
+    "section": "",
+    "text": "PhD Student in Robotics and Mechatronics\nUniversity of Málaga\nI work on field robotics, terrain-aware navigation, robotic perception, ROS 2 systems, and real-world unmanned ground vehicles.\nThis website collects my academic work, research projects, publications, software, and technical notes developed during my PhD.\nGitHub Research Projects Publications"
   },
   {
-    "objectID": "index.html#iros-2026",
-    "href": "index.html#iros-2026",
+    "objectID": "index.html#current-focus",
+    "href": "index.html#current-focus",
     "title": "Luis Miguel Díaz Pichardo",
-    "section": "IROS 2026",
-    "text": "IROS 2026\nI will attend IROS 2026 to present work related to onboard robotic perception and real-world robotic systems."
+    "section": "Current focus",
+    "text": "Current focus\n\nTerrain-aware navigation for unmanned ground vehicles.\n2.5D elevation mapping and traversability estimation.\nRobotic perception using RGB-D, LiDAR and RGB-T sensors.\nMPPI-based local control and learning-based guidance.\nReal-world deployment with ROS 2, Docker and embedded GPU platforms."
   },
   {
-    "objectID": "index.html#latest-notes",
-    "href": "index.html#latest-notes",
+    "objectID": "index.html#highlight",
+    "href": "index.html#highlight",
     "title": "Luis Miguel Díaz Pichardo",
-    "section": "Latest notes",
-    "text": "Latest notes\nComing soon."
+    "section": "Highlight",
+    "text": "Highlight\n\nIROS 2026\nI have an accepted paper at IROS 2026. A dedicated page with the final title, short summary, authors, links and public material will be added once the official version becomes available."
+  },
+  {
+    "objectID": "index.html#selected-links",
+    "href": "index.html#selected-links",
+    "title": "Luis Miguel Díaz Pichardo",
+    "section": "Selected links",
+    "text": "Selected links\n\nGitHub: https://github.com/Rhobtor\nUniversity of Málaga profile: coming soon\nLinkedIn: coming soon"
   },
   {
     "objectID": "projects.html",
@@ -119,48 +126,6 @@
     "text": "My PhD research focuses on robotic systems for unmanned ground vehicles operating in unknown and unstructured environments.\nThe main goal is to develop methods that allow ground robots to perceive local terrain, estimate traversability, react to obstacles, and generate safe motion commands in real time."
   },
   {
-    "objectID": "research.html#research-direction",
-    "href": "research.html#research-direction",
-    "title": "Research",
-    "section": "Research direction",
-    "text": "Research direction\nThe robot uses local perception to build a 2.5D representation of the surrounding terrain. This map is used to reason about elevation, slope, obstacles, unknown areas, and local traversability.\nMy current work explores how to combine:\n\n2.5D elevation mapping.\nLiDAR and RGB-D perception.\nLearning-based path refinement.\nModel Predictive Path Integral control.\nReal-time deployment on robotic platforms."
-  },
-  {
-    "objectID": "research.html#main-objective",
-    "href": "research.html#main-objective",
-    "title": "Research",
-    "section": "Main objective",
-    "text": "Main objective\nThe long-term goal is to develop terrain-aware navigation methods for real robots in search and rescue scenarios, where the environment is unknown, partially observable, and difficult to model in advance."
-  },
-  {
-    "objectID": "index.html#rhobtor",
-    "href": "index.html#rhobtor",
-    "title": "Luis Miguel Díaz Pichardo",
-    "section": "",
-    "text": "PhD Student in Robotics and Mechatronics\nUniversity of Málaga\nI work on field robotics, terrain-aware navigation, robotic perception, ROS 2 systems, and real-world unmanned ground vehicles.\nThis website collects my academic work, research projects, publications, software, and technical notes developed during my PhD.\nGitHub Publications Research Projects"
-  },
-  {
-    "objectID": "index.html#current-focus",
-    "href": "index.html#current-focus",
-    "title": "Luis Miguel Díaz Pichardo",
-    "section": "Current focus",
-    "text": "Current focus\n\nTerrain-aware navigation for unmanned ground vehicles.\n2.5D elevation mapping and traversability estimation.\nRobotic perception using RGB-D, LiDAR and RGB-T sensors.\nMPPI-based local control and learning-based guidance.\nReal-world deployment with ROS 2, Docker and embedded GPU platforms."
-  },
-  {
-    "objectID": "index.html#highlight",
-    "href": "index.html#highlight",
-    "title": "Luis Miguel Díaz Pichardo",
-    "section": "Highlight",
-    "text": "Highlight\n\nIROS 2026\nI have an accepted paper at IROS 2026. A dedicated page with the final title, short summary, authors, links and public material will be added once the official version becomes available."
-  },
-  {
-    "objectID": "index.html#selected-links",
-    "href": "index.html#selected-links",
-    "title": "Luis Miguel Díaz Pichardo",
-    "section": "Selected links",
-    "text": "Selected links\n\nGitHub: https://github.com/Rhobtor\nUniversity of Málaga profile: coming soon\nLinkedIn: coming soon"
-  },
-  {
     "objectID": "research.html#research-areas",
     "href": "research.html#research-areas",
     "title": "Research",
@@ -175,10 +140,157 @@
     "text": "Long-term objective\nThe long-term objective of my PhD is to develop terrain-aware navigation methods for real robots in search and rescue scenarios, where the environment is unknown, partially observable and difficult to model in advance."
   },
   {
-    "objectID": "about.html#links",
-    "href": "about.html#links",
+    "objectID": "projects/projects.html",
+    "href": "projects/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This page collects selected research and engineering projects developed during my PhD."
+  },
+  {
+    "objectID": "projects/projects.html#terrain-aware-mppi-navigation",
+    "href": "projects/projects.html#terrain-aware-mppi-navigation",
+    "title": "Projects",
+    "section": "Terrain-aware MPPI Navigation",
+    "text": "Terrain-aware MPPI Navigation\nReactive local navigation for unmanned ground vehicles using 2.5D terrain maps, learned guidance and MPPI-based predictive control.\nStatus: in development\nTopics: field robotics, MPPI, terrain mapping, ROS 2, UGV navigation"
+  },
+  {
+    "objectID": "projects/projects.html#rgb-t-onboard-perception-for-ugvs",
+    "href": "projects/projects.html#rgb-t-onboard-perception-for-ugvs",
+    "title": "Projects",
+    "section": "RGB-T Onboard Perception for UGVs",
+    "text": "RGB-T Onboard Perception for UGVs\nReal-time RGB-T perception pipeline for search and rescue robotics using onboard embedded computing, RGB cameras, thermal cameras and ROS 2.\nStatus: IROS 2026 related work\nTopics: robotic perception, RGB-T, Jetson, ROS 2, search and rescue"
+  },
+  {
+    "objectID": "projects/projects.html#d-map-compression",
+    "href": "projects/projects.html#d-map-compression",
+    "title": "Projects",
+    "section": "2.5D Map Compression",
+    "text": "2.5D Map Compression\nLocal map management and intelligent compression of 2.5D elevation maps for long-term navigation with limited onboard resources.\nStatus: prototype\nTopics: mapping, compression, embedded robotics, terrain representation"
+  },
+  {
+    "objectID": "projects/projects.html#ros-2-robotics-infrastructure",
+    "href": "projects/projects.html#ros-2-robotics-infrastructure",
+    "title": "Projects",
+    "section": "ROS 2 Robotics Infrastructure",
+    "text": "ROS 2 Robotics Infrastructure\nDocker-based development environments and deployment tools for ROS 2, Gazebo, Jetson, perception pipelines and multi-machine robotic systems.\nStatus: ongoing\nTopics: ROS 2, Docker, CycloneDDS, Jetson, robotics software"
+  },
+  {
+    "objectID": "publications/publications.html",
+    "href": "publications/publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "This page lists my academic publications, conference contributions, posters and related material."
+  },
+  {
+    "objectID": "publications/publications.html#conference-papers",
+    "href": "publications/publications.html#conference-papers",
+    "title": "Publications",
+    "section": "Conference papers",
+    "text": "Conference papers\n\nIROS 2026\n\nTitle: Coming soon\nAuthors: Coming soon\nVenue: IEEE/RSJ International Conference on Intelligent Robots and Systems, IROS 2026\nStatus: Accepted\nSubmitted: Coming soon\nAccepted: Coming soon\nCamera-ready: Pending\nPublic version: Pending\nShort summary:\nA short public summary will be added here once the final version is ready.\nLinks:\n- Paper: pending\n- Project page: pending\n- Code: pending\n- Video: pending"
+  },
+  {
+    "objectID": "publications/publications.html#preprints",
+    "href": "publications/publications.html#preprints",
+    "title": "Publications",
+    "section": "Preprints",
+    "text": "Preprints\nComing soon."
+  },
+  {
+    "objectID": "publications/publications.html#posters-and-presentations",
+    "href": "publications/publications.html#posters-and-presentations",
+    "title": "Publications",
+    "section": "Posters and presentations",
+    "text": "Posters and presentations\nComing soon."
+  },
+  {
+    "objectID": "research/research.html",
+    "href": "research/research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My PhD research focuses on robotic systems for unmanned ground vehicles operating in unknown and unstructured environments.\nThe main goal is to develop methods that allow ground robots to perceive local terrain, estimate traversability, react to obstacles, and generate safe motion commands in real time."
+  },
+  {
+    "objectID": "research/research.html#research-areas",
+    "href": "research/research.html#research-areas",
+    "title": "Research",
+    "section": "Research areas",
+    "text": "Research areas\n\nTerrain-aware navigation\nI work on navigation methods that use local 2.5D terrain maps to reason about elevation, slope, obstacles, unknown space and traversability.\n\n\nRobotic perception\nMy work involves RGB-D cameras, LiDAR sensors, thermal cameras and onboard perception pipelines for real robotic platforms.\n\n\nPredictive control and learning-based guidance\nI am interested in combining model predictive control methods, such as MPPI, with learned guidance and local path refinement.\n\n\nReal-world robotic deployment\nA significant part of my work focuses on practical deployment issues: ROS 2, Docker, embedded GPUs, Jetson platforms, multi-machine communication, sensors and real-time constraints."
+  },
+  {
+    "objectID": "research/research.html#long-term-objective",
+    "href": "research/research.html#long-term-objective",
+    "title": "Research",
+    "section": "Long-term objective",
+    "text": "Long-term objective\nThe long-term objective of my PhD is to develop terrain-aware navigation methods for real robots in search and rescue scenarios, where the environment is unknown, partially observable and difficult to model in advance."
+  },
+  {
+    "objectID": "about/about.html",
+    "href": "about/about.html",
+    "title": "About",
+    "section": "",
+    "text": "@Rhobtor\nI am a PhD student in Robotics and Mechatronics at the University of Málaga.\nMy work focuses on field robotics, autonomous navigation, robotic perception, and real-world deployment of unmanned ground vehicles in unstructured environments.\nI use Rhobtor as my online nickname for GitHub and technical projects.\n\n\n\nField robotics\nAutonomous navigation\nUnmanned ground vehicles\nTerrain-aware planning and control\n2.5D elevation mapping\nRobotic perception\nROS 2 and robotic software systems\nEmbedded GPU deployment\nSearch and rescue robotics\n\n\n\n\n\nGitHub: https://github.com/Rhobtor\nUniversity of Málaga profile: coming soon\nLinkedIn: coming soon\nEmail: luismidp7@gmail.com"
+  },
+  {
+    "objectID": "about/about.html#research-interests",
+    "href": "about/about.html#research-interests",
+    "title": "About",
+    "section": "",
+    "text": "Field robotics\nAutonomous navigation\nUnmanned ground vehicles\nTerrain-aware planning and control\n2.5D elevation mapping\nRobotic perception\nROS 2 and robotic software systems\nEmbedded GPU deployment\nSearch and rescue robotics"
+  },
+  {
+    "objectID": "about/about.html#links",
+    "href": "about/about.html#links",
     "title": "About",
     "section": "",
     "text": "GitHub: https://github.com/Rhobtor\nUniversity of Málaga profile: coming soon\nLinkedIn: coming soon\nEmail: luismidp7@gmail.com"
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "My PhD research focuses on robotic systems for unmanned ground vehicles operating in unknown and unstructured environments.\nThe main goal is to develop methods that allow ground robots to perceive local terrain, estimate traversability, react to obstacles, and generate safe motion commands in real time."
+  },
+  {
+    "objectID": "research/index.html#research-areas",
+    "href": "research/index.html#research-areas",
+    "title": "Research",
+    "section": "Research areas",
+    "text": "Research areas\n\nTerrain-aware navigation\nI work on navigation methods that use local 2.5D terrain maps to reason about elevation, slope, obstacles, unknown space and traversability.\n\n\nRobotic perception\nMy work involves RGB-D cameras, LiDAR sensors, thermal cameras and onboard perception pipelines for real robotic platforms.\n\n\nPredictive control and learning-based guidance\nI am interested in combining model predictive control methods, such as MPPI, with learned guidance and local path refinement.\n\n\nReal-world robotic deployment\nA significant part of my work focuses on practical deployment issues: ROS 2, Docker, embedded GPUs, Jetson platforms, multi-machine communication, sensors and real-time constraints."
+  },
+  {
+    "objectID": "research/index.html#long-term-objective",
+    "href": "research/index.html#long-term-objective",
+    "title": "Research",
+    "section": "Long-term objective",
+    "text": "Long-term objective\nThe long-term objective of my PhD is to develop terrain-aware navigation methods for real robots in search and rescue scenarios, where the environment is unknown, partially observable and difficult to model in advance."
+  },
+  {
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "This page lists my academic publications, conference contributions, posters and related material."
+  },
+  {
+    "objectID": "publications/index.html#conference-papers",
+    "href": "publications/index.html#conference-papers",
+    "title": "Publications",
+    "section": "Conference papers",
+    "text": "Conference papers\n\nIROS 2026\n\nTitle: Coming soon\nAuthors: Coming soon\nVenue: IEEE/RSJ International Conference on Intelligent Robots and Systems, IROS 2026\nStatus: Accepted\nSubmitted: Coming soon\nAccepted: Coming soon\nCamera-ready: Pending\nPublic version: Pending\nShort summary:\nA short public summary will be added here once the final version is ready.\nLinks:\n- Paper: pending\n- Project page: pending\n- Code: pending\n- Video: pending"
+  },
+  {
+    "objectID": "publications/index.html#preprints",
+    "href": "publications/index.html#preprints",
+    "title": "Publications",
+    "section": "Preprints",
+    "text": "Preprints\nComing soon."
+  },
+  {
+    "objectID": "publications/index.html#posters-and-presentations",
+    "href": "publications/index.html#posters-and-presentations",
+    "title": "Publications",
+    "section": "Posters and presentations",
+    "text": "Posters and presentations\nComing soon."
   }
 ]

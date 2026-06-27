@@ -17,9 +17,9 @@ I work on field robotics, terrain-aware navigation, robotic perception, ROS 2 sy
 This website collects my academic work, research projects, publications, software, and technical notes developed during my PhD.
 
 [GitHub](https://github.com/Rhobtor){.btn .btn-primary}
-[Publications](publications.qmd){.btn .btn-secondary}
-[Research](research.qmd){.btn .btn-secondary}
-[Projects](projects.qmd){.btn .btn-secondary}
+[Research](research/){.btn .btn-secondary}
+[Projects](projects/){.btn .btn-secondary}
+[Publications](publications/){.btn .btn-secondary}
 :::
 
 ## Current focus

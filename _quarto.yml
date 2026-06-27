@@ -7,19 +7,19 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: research.qmd
+      - href: research/
         text: Research
-      - href: publications.qmd
+      - href: publications/
         text: Publications
-      - href: projects.qmd
+      - href: projects/
         text: Projects
-      - href: about.qmd
+      - href: about/
         text: About
     right:
       - icon: github
         href: https://github.com/Rhobtor
       - icon: linkedin
-        href: "PON_AQUI_TU_LINKEDIN"
+        href: https://www.linkedin.com/in/luis-miguel-diaz-pichardo-2255b3180/
       - icon: envelope
         href: mailto:luismidp7@gmail.com
 

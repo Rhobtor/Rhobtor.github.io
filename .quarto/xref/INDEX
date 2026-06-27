@@ -13,5 +13,29 @@
   },
   "publications.qmd": {
     "publications.html": "d9365b61"
+  },
+  "about/index.qmd": {
+    "index.html": "8509fee7"
+  },
+  "about/about.qmd": {
+    "about.html": "88535168"
+  },
+  "research/index.qmd": {
+    "index.html": "5b25db7b"
+  },
+  "research/research.qmd": {
+    "research.html": "16bfd02b"
+  },
+  "publications/index.qmd": {
+    "index.html": "05d626b0"
+  },
+  "publications/publications.qmd": {
+    "publications.html": "9af3333d"
+  },
+  "projects/index.qmd": {
+    "index.html": "03c5c40d"
+  },
+  "projects/projects.qmd": {
+    "projects.html": "aafe6c6f"
   }
 }
