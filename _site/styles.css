@@ -1,0 +1,50 @@
+body {
+  font-size: 17px;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+.navbar-title {
+  font-weight: 600;
+}
+
+.hero {
+  max-width: 950px;
+  margin: 3rem auto 4rem auto;
+  padding: 2.5rem;
+  border-radius: 18px;
+  background: #f7f7f9;
+  border: 1px solid #e5e5e5;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.2rem;
+}
+
+.hero h2 {
+  font-size: 1.4rem;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+.btn {
+  margin-right: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.paper-card {
+  padding: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  background: #fafafa;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}

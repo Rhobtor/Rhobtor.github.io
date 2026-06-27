@@ -1,0 +1,29 @@
+---
+title: "Research"
+---
+
+My PhD research focuses on robotic systems for unmanned ground vehicles operating in unknown and unstructured environments.
+
+The main goal is to develop methods that allow ground robots to perceive local terrain, estimate traversability, react to obstacles, and generate safe motion commands in real time.
+
+## Research areas
+
+### Terrain-aware navigation
+
+I work on navigation methods that use local 2.5D terrain maps to reason about elevation, slope, obstacles, unknown space and traversability.
+
+### Robotic perception
+
+My work involves RGB-D cameras, LiDAR sensors, thermal cameras and onboard perception pipelines for real robotic platforms.
+
+### Predictive control and learning-based guidance
+
+I am interested in combining model predictive control methods, such as MPPI, with learned guidance and local path refinement.
+
+### Real-world robotic deployment
+
+A significant part of my work focuses on practical deployment issues: ROS 2, Docker, embedded GPUs, Jetson platforms, multi-machine communication, sensors and real-time constraints.
+
+## Long-term objective
+
+The long-term objective of my PhD is to develop terrain-aware navigation methods for real robots in search and rescue scenarios, where the environment is unknown, partially observable and difficult to model in advance.

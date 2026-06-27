@@ -1,0 +1,37 @@
+---
+title: "Publications"
+---
+
+This page lists my academic publications, conference contributions, posters and related material.
+
+## Conference papers
+
+### IROS 2026
+
+::: {.paper-card}
+**Title:** Coming soon  
+**Authors:** Coming soon  
+**Venue:** IEEE/RSJ International Conference on Intelligent Robots and Systems, IROS 2026  
+**Status:** Accepted  
+**Submitted:** Coming soon  
+**Accepted:** Coming soon  
+**Camera-ready:** Pending  
+**Public version:** Pending  
+
+**Short summary:**  
+A short public summary will be added here once the final version is ready.
+
+**Links:**  
+- Paper: pending  
+- Project page: pending  
+- Code: pending  
+- Video: pending  
+:::
+
+## Preprints
+
+Coming soon.
+
+## Posters and presentations
+
+Coming soon.

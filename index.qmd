@@ -1,0 +1,43 @@
+---
+title: "Luis Miguel Díaz Pichardo"
+subtitle: "@Rhobtor"
+page-layout: full
+---
+
+::: {.hero}
+# Luis Miguel Díaz Pichardo
+
+## @Rhobtor
+
+**PhD Student in Robotics and Mechatronics**  
+University of Málaga
+
+I work on field robotics, terrain-aware navigation, robotic perception, ROS 2 systems, and real-world unmanned ground vehicles.
+
+This website collects my academic work, research projects, publications, software, and technical notes developed during my PhD.
+
+[GitHub](https://github.com/Rhobtor){.btn .btn-primary}
+[Publications](publications.qmd){.btn .btn-secondary}
+[Research](research.qmd){.btn .btn-secondary}
+[Projects](projects.qmd){.btn .btn-secondary}
+:::
+
+## Current focus
+
+- Terrain-aware navigation for unmanned ground vehicles.
+- 2.5D elevation mapping and traversability estimation.
+- Robotic perception using RGB-D, LiDAR and RGB-T sensors.
+- MPPI-based local control and learning-based guidance.
+- Real-world deployment with ROS 2, Docker and embedded GPU platforms.
+
+## Highlight
+
+### IROS 2026
+
+I have an accepted paper at **IROS 2026**. A dedicated page with the final title, short summary, authors, links and public material will be added once the official version becomes available.
+
+## Selected links
+
+- GitHub: <https://github.com/Rhobtor>
+- University of Málaga profile: coming soon
+- LinkedIn: coming soon

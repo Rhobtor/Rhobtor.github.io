@@ -1,0 +1,33 @@
+---
+title: "Projects"
+---
+
+This page collects selected research and engineering projects developed during my PhD.
+
+## Terrain-aware MPPI Navigation
+
+Reactive local navigation for unmanned ground vehicles using 2.5D terrain maps, learned guidance and MPPI-based predictive control.
+
+**Status:** in development  
+**Topics:** field robotics, MPPI, terrain mapping, ROS 2, UGV navigation
+
+## RGB-T Onboard Perception for UGVs
+
+Real-time RGB-T perception pipeline for search and rescue robotics using onboard embedded computing, RGB cameras, thermal cameras and ROS 2.
+
+**Status:** IROS 2026 related work  
+**Topics:** robotic perception, RGB-T, Jetson, ROS 2, search and rescue
+
+## 2.5D Map Compression
+
+Local map management and intelligent compression of 2.5D elevation maps for long-term navigation with limited onboard resources.
+
+**Status:** prototype  
+**Topics:** mapping, compression, embedded robotics, terrain representation
+
+## ROS 2 Robotics Infrastructure
+
+Docker-based development environments and deployment tools for ROS 2, Gazebo, Jetson, perception pipelines and multi-machine robotic systems.
+
+**Status:** ongoing  
+**Topics:** ROS 2, Docker, CycloneDDS, Jetson, robotics software

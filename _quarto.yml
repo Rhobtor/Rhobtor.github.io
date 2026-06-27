@@ -1,0 +1,30 @@
+project:
+  type: website
+
+website:
+  title: "Luis Miguel Díaz Pichardo"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: projects.qmd
+        text: Projects
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/Rhobtor
+      - icon: linkedin
+        href: "PON_AQUI_TU_LINKEDIN"
+      - icon: envelope
+        href: mailto:luismidp7@gmail.com
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
