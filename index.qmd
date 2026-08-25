@@ -1,13 +1,12 @@
 ---
-title: "Luis Miguel Díaz Pichardo"
-subtitle: "@Rhobtor"
 page-layout: full
+
 ---
 
 ::: {.hero}
-# Luis Miguel Díaz Pichardo
+# Luis Miguel Díaz Pichardo {.unlisted}
 
-## @Rhobtor
+## @Rhobtor {.unlisted}
 
 **PhD Student in Robotics and Mechatronics**  
 University of Málaga
@@ -38,6 +37,6 @@ I have an accepted paper at **IROS 2026**. A dedicated page with the final title
 
 ## Selected links
 
-- GitHub: <https://github.com/Rhobtor>
+- GitHub: https://github.com/Rhobtor
 - University of Málaga profile: coming soon
 - LinkedIn: coming soon
