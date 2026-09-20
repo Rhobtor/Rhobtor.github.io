@@ -4,139 +4,202 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "This page collects selected research and engineering projects developed during my PhD."
+    "text": "PROJECTS\n\n\nProjects\nThis section will be updated with real projects I develop over time.\nIt will include practical work, prototypes, software, robotics projects, experiments and other engineering developments.\nProjects will be added here as they are completed and ready to share."
   },
   {
-    "objectID": "projects/index.html#terrain-aware-mppi-navigation",
-    "href": "projects/index.html#terrain-aware-mppi-navigation",
-    "title": "Projects",
-    "section": "Terrain-aware MPPI Navigation",
-    "text": "Terrain-aware MPPI Navigation\nReactive local navigation for unmanned ground vehicles using 2.5D terrain maps, learned guidance and MPPI-based predictive control.\nStatus: in development\nTopics: field robotics, MPPI, terrain mapping, ROS 2, UGV navigation"
-  },
-  {
-    "objectID": "projects/index.html#rgb-t-onboard-perception-for-ugvs",
-    "href": "projects/index.html#rgb-t-onboard-perception-for-ugvs",
-    "title": "Projects",
-    "section": "RGB-T Onboard Perception for UGVs",
-    "text": "RGB-T Onboard Perception for UGVs\nReal-time RGB-T perception pipeline for search and rescue robotics using onboard embedded computing, RGB cameras, thermal cameras and ROS 2.\nStatus: IROS 2026 related work\nTopics: robotic perception, RGB-T, Jetson, ROS 2, search and rescue"
-  },
-  {
-    "objectID": "projects/index.html#d-map-compression",
-    "href": "projects/index.html#d-map-compression",
-    "title": "Projects",
-    "section": "2.5D Map Compression",
-    "text": "2.5D Map Compression\nLocal map management and intelligent compression of 2.5D elevation maps for long-term navigation with limited onboard resources.\nStatus: prototype\nTopics: mapping, compression, embedded robotics, terrain representation"
-  },
-  {
-    "objectID": "projects/index.html#ros-2-robotics-infrastructure",
-    "href": "projects/index.html#ros-2-robotics-infrastructure",
-    "title": "Projects",
-    "section": "ROS 2 Robotics Infrastructure",
-    "text": "ROS 2 Robotics Infrastructure\nDocker-based development environments and deployment tools for ROS 2, Gazebo, Jetson, perception pipelines and multi-machine robotic systems.\nStatus: ongoing\nTopics: ROS 2, Docker, CycloneDDS, Jetson, robotics software"
-  },
-  {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "Research",
+    "objectID": "research/iros2026/index.html",
+    "href": "research/iros2026/index.html",
+    "title": "IROS 2026",
     "section": "",
-    "text": "My PhD research focuses on robotic systems for unmanned ground vehicles operating in unknown and unstructured environments.\nThe main goal is to develop methods that allow ground robots to perceive local terrain, estimate traversability, react to obstacles, and generate safe motion commands in real time."
+    "text": "IROS 2026 · ACCEPTED\n\n\n\nIEEE/RSJ International Conference on Intelligent Robots and Systems · IROS 2026\n\nReactive local navigation for a car-like UGV using observation-conditioned predictive sampling and myopic egocentric 2.5D terrain information.\nResearch overview Publications"
   },
   {
-    "objectID": "research/index.html#research-areas",
-    "href": "research/index.html#research-areas",
-    "title": "Research",
-    "section": "Research areas",
-    "text": "Research areas\n\nTerrain-aware navigation\nI work on navigation methods that use local 2.5D terrain maps to reason about elevation, slope, obstacles, unknown space and traversability.\n\n\nRobotic perception\nMy work involves RGB-D cameras, LiDAR sensors, thermal cameras and onboard perception pipelines for real robotic platforms.\n\n\nPredictive control and learning-based guidance\nI am interested in combining model predictive control methods, such as MPPI, with learned guidance and local path refinement.\n\n\nReal-world robotic deployment\nA significant part of my work focuses on practical deployment issues: ROS 2, Docker, embedded GPUs, Jetson platforms, multi-machine communication, sensors and real-time constraints."
+    "objectID": "research/iros2026/index.html#overview",
+    "href": "research/iros2026/index.html#overview",
+    "title": "IROS 2026",
+    "section": "Overview",
+    "text": "Overview\nSampling-based Model Predictive Control evaluates many candidate motions during each control cycle.\nWhen the robot only has access to a limited egocentric representation of its surroundings, distributing a fixed rollout budget uniformly can spend valuable samples in directions that are not especially useful for the current terrain observation.\nThis work studies how the available rollout budget can instead be allocated according to what the robot currently observes.\nThe proposed method concentrates predictive sampling in locally relevant regions while preserving explicit trajectory evaluation and model-based control."
   },
   {
-    "objectID": "research/index.html#long-term-objective",
-    "href": "research/index.html#long-term-objective",
-    "title": "Research",
-    "section": "Long-term objective",
-    "text": "Long-term objective\nThe long-term objective of my PhD is to develop terrain-aware navigation methods for real robots in search and rescue scenarios, where the environment is unknown, partially observable and difficult to model in advance."
+    "objectID": "research/iros2026/index.html#real-world-demonstration",
+    "href": "research/iros2026/index.html#real-world-demonstration",
+    "title": "IROS 2026",
+    "section": "Real-world demonstration",
+    "text": "Real-world demonstration\nThe method was evaluated on a real outdoor car-like unmanned ground vehicle using onboard perception and computation.\n\n\n\nYour browser does not support embedded video. \n:::\nThe video shows the navigation system operating on the real platform during an outdoor field experiment.\n\nNavigation problem\nThe robot operates with a limited sensor horizon and therefore does not have access to a complete map of the environment.\nNavigation decisions must be made from a myopic egocentric 2.5D terrain representation while satisfying the motion constraints of a car-like vehicle and the real-time requirements of the predictive controller.\nThe main challenge addressed in this work is therefore not to increase the total number of predictive samples, but to use a fixed sampling budget more effectively.\n\n\nProposed approach\nThe method modifies how the available MPPI rollouts are distributed around the robot.\n\n\n1 · Observe\nThe robot builds an egocentric 2.5D representation of the terrain currently visible to its sensors.\n\n\n2 · Allocate\nThe fixed rollout budget is distributed across structured local regions according to the current observation.\n\n\n3 · Evaluate\nCandidate trajectories are propagated and evaluated by the predictive controller before the final vehicle command is selected.\n\n\nThe observation-conditioned component influences the sampling process. It does not directly command the robot.\n\n\nObservation-conditioned rollout allocation\nThe local sampling space is divided into structured regions around the vehicle.\nRather than assigning the same amount of sampling effort everywhere, the allocation changes according to the terrain currently observed by the robot.\nConceptually, the navigation loop is:\nEgocentric terrain observation\n            ↓\nLocal region analysis\n            ↓\nObservation-conditioned rollout allocation\n            ↓\nMPPI candidate trajectories\n            ↓\nTrajectory evaluation\n            ↓\nVehicle command\nThe total rollout budget remains bounded, allowing the method to remain suitable for real-time execution.\n\n\nExperimental platform\nThe system was evaluated in simulation and on a real outdoor robotic platform.\n\n\nPlatform\nCar-like unmanned ground vehicle\n\n\nRepresentation\nMyopic egocentric 2.5D elevation maps\n\n\nController\nSampling-based Model Predictive Control\n\n\nValidation\nSimulation and real-world field experiments\n\n\n\n\nEvaluation\nThe experimental study compares observation-conditioned rollout allocation with uniform sampling under the same general predictive-control setting.\nThe evaluation considers navigation performance together with real-time execution, including metrics related to success, safety events, trajectory behaviour and computational latency.\n\n\nMain contribution\nThe central contribution is a method for reallocating a fixed MPPI sampling budget according to the current egocentric terrain observation.\nThis allows the predictive controller to spend more of its available computation on locally relevant motion hypotheses without replacing the explicit model-based control process.\n\n\nRelation to my PhD\nThis paper represents one stage of my current doctoral research on autonomous UGV navigation in unstructured terrain.\nIt focuses on reactive local navigation using only the terrain currently visible around the robot.\nMy ongoing research extends this direction toward terrain-aware local control, navigation using global DEM information, autonomous exploration and compact terrain memory.\nSee the complete research overview\n\n\nMaterial\nAdditional public material will be linked here as it becomes available:\n\nPaper\nIEEE Xplore page\nIROS 2026 poster\nConference presentation\nDemonstration video\nSupplementary material\nPublic code, where applicable\n\n\nQuestions about this work?\nContact me LinkedIn Back to Research"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Luis Miguel Díaz Pichardo",
-    "section": "",
-    "text": "PhD Student in Robotics and Mechatronics\nUniversity of Málaga\nI work on field robotics, terrain-aware navigation, robotic perception, ROS 2 systems, and real-world unmanned ground vehicles.\nThis website collects my academic work, research projects, publications, software, and technical notes developed during my PhD.\nGitHub Research Projects Publications"
+    "objectID": "research/iros2026/index.html#navigation-problem",
+    "href": "research/iros2026/index.html#navigation-problem",
+    "title": "IROS 2026",
+    "section": "Navigation problem",
+    "text": "Navigation problem\nThe robot operates with a limited sensor horizon and therefore does not have access to a complete map of the environment.\nNavigation decisions must be made from a myopic egocentric 2.5D terrain representation while satisfying the motion constraints of a car-like vehicle and the real-time requirements of the predictive controller.\nThe main challenge addressed in this work is therefore not to increase the total number of predictive samples, but to use a fixed sampling budget more effectively."
   },
   {
-    "objectID": "index.html#rhobtor",
-    "href": "index.html#rhobtor",
-    "title": "Luis Miguel Díaz Pichardo",
-    "section": "",
-    "text": "PhD Student in Robotics and Mechatronics\nUniversity of Málaga\nI work on field robotics, terrain-aware navigation, robotic perception, ROS 2 systems, and real-world unmanned ground vehicles.\nThis website collects my academic work, research projects, publications, software, and technical notes developed during my PhD.\nGitHub Research Projects Publications"
+    "objectID": "research/iros2026/index.html#proposed-approach",
+    "href": "research/iros2026/index.html#proposed-approach",
+    "title": "IROS 2026",
+    "section": "Proposed approach",
+    "text": "Proposed approach\nThe method modifies how the available MPPI rollouts are distributed around the robot.\n\n\n1 · Observe\nThe robot builds an egocentric 2.5D representation of the terrain currently visible to its sensors.\n\n\n2 · Allocate\nThe fixed rollout budget is distributed across structured local regions according to the current observation.\n\n\n3 · Evaluate\nCandidate trajectories are propagated and evaluated by the predictive controller before the final vehicle command is selected.\n\n\nThe observation-conditioned component influences the sampling process. It does not directly command the robot."
   },
   {
-    "objectID": "index.html#current-focus",
-    "href": "index.html#current-focus",
-    "title": "Luis Miguel Díaz Pichardo",
-    "section": "Current focus",
-    "text": "Current focus\n\nTerrain-aware navigation for unmanned ground vehicles.\n2.5D elevation mapping and traversability estimation.\nRobotic perception using RGB-D, LiDAR and RGB-T sensors.\nMPPI-based local control and learning-based guidance.\nReal-world deployment with ROS 2, Docker and embedded GPU platforms."
+    "objectID": "research/iros2026/index.html#observation-conditioned-rollout-allocation",
+    "href": "research/iros2026/index.html#observation-conditioned-rollout-allocation",
+    "title": "IROS 2026",
+    "section": "Observation-conditioned rollout allocation",
+    "text": "Observation-conditioned rollout allocation\nThe local sampling space is divided into structured regions around the vehicle.\nRather than assigning the same amount of sampling effort everywhere, the allocation changes according to the terrain currently observed by the robot.\nConceptually, the navigation loop is:\nEgocentric terrain observation\n            ↓\nLocal region analysis\n            ↓\nObservation-conditioned rollout allocation\n            ↓\nMPPI candidate trajectories\n            ↓\nTrajectory evaluation\n            ↓\nVehicle command\nThe total rollout budget remains bounded, allowing the method to remain suitable for real-time execution."
   },
   {
-    "objectID": "index.html#highlight",
-    "href": "index.html#highlight",
-    "title": "Luis Miguel Díaz Pichardo",
-    "section": "Highlight",
-    "text": "Highlight\n\nIROS 2026\nI have an accepted paper at IROS 2026. A dedicated page with the final title, short summary, authors, links and public material will be added once the official version becomes available."
+    "objectID": "research/iros2026/index.html#experimental-platform",
+    "href": "research/iros2026/index.html#experimental-platform",
+    "title": "IROS 2026",
+    "section": "Experimental platform",
+    "text": "Experimental platform\nThe system was evaluated in simulation and on a real outdoor robotic platform.\n\n\nPlatform\nCar-like unmanned ground vehicle\n\n\nRepresentation\nMyopic egocentric 2.5D elevation maps\n\n\nController\nSampling-based Model Predictive Control\n\n\nValidation\nSimulation and real-world field experiments"
   },
   {
-    "objectID": "index.html#selected-links",
-    "href": "index.html#selected-links",
-    "title": "Luis Miguel Díaz Pichardo",
-    "section": "Selected links",
-    "text": "Selected links\n\nGitHub: https://github.com/Rhobtor\nUniversity of Málaga profile: coming soon\nLinkedIn: coming soon"
+    "objectID": "research/iros2026/index.html#evaluation",
+    "href": "research/iros2026/index.html#evaluation",
+    "title": "IROS 2026",
+    "section": "Evaluation",
+    "text": "Evaluation\nThe experimental study compares observation-conditioned rollout allocation with uniform sampling under the same general predictive-control setting.\nThe evaluation considers navigation performance together with real-time execution, including metrics related to success, safety events, trajectory behaviour and computational latency."
+  },
+  {
+    "objectID": "research/iros2026/index.html#main-contribution",
+    "href": "research/iros2026/index.html#main-contribution",
+    "title": "IROS 2026",
+    "section": "Main contribution",
+    "text": "Main contribution\nThe central contribution is a method for reallocating a fixed MPPI sampling budget according to the current egocentric terrain observation.\nThis allows the predictive controller to spend more of its available computation on locally relevant motion hypotheses without replacing the explicit model-based control process."
+  },
+  {
+    "objectID": "research/iros2026/index.html#relation-to-my-phd",
+    "href": "research/iros2026/index.html#relation-to-my-phd",
+    "title": "IROS 2026",
+    "section": "Relation to my PhD",
+    "text": "Relation to my PhD\nThis paper represents one stage of my current doctoral research on autonomous UGV navigation in unstructured terrain.\nIt focuses on reactive local navigation using only the terrain currently visible around the robot.\nMy ongoing research extends this direction toward terrain-aware local control, navigation using global DEM information, autonomous exploration and compact terrain memory.\nSee the complete research overview"
+  },
+  {
+    "objectID": "research/iros2026/index.html#material",
+    "href": "research/iros2026/index.html#material",
+    "title": "IROS 2026",
+    "section": "Material",
+    "text": "Material\nAdditional public material will be linked here as it becomes available:\n\nPaper\nIEEE Xplore page\nIROS 2026 poster\nConference presentation\nDemonstration video\nSupplementary material\nPublic code, where applicable\n\n\nQuestions about this work?\nContact me LinkedIn Back to Research"
   },
   {
     "objectID": "about/index.html",
     "href": "about/index.html",
     "title": "About",
     "section": "",
-    "text": "@Rhobtor\nI am a PhD student in Robotics and Mechatronics at the University of Málaga.\nMy work focuses on field robotics, autonomous navigation, robotic perception, and real-world deployment of unmanned ground vehicles in unstructured environments.\nI use Rhobtor as my online nickname for GitHub and technical projects.\n\n\n\nField robotics\nAutonomous navigation\nUnmanned ground vehicles\nTerrain-aware planning and control\n2.5D elevation mapping\nRobotic perception\nROS 2 and robotic software systems\nEmbedded GPU deployment\nSearch and rescue robotics\n\n\n\n\n\nGitHub: https://github.com/Rhobtor\nUniversity of Málaga profile: coming soon\nLinkedIn: coming soon\nEmail: luismidp7@gmail.com"
+    "text": "ABOUT\n\n\n\n@Rhobtor\nI am a PhD researcher in Robotics and Mechatronics at the University of Málaga, Spain.\nMy current doctoral research focuses on autonomous navigation for unmanned ground vehicles operating in unknown and unstructured terrain. I develop and evaluate methods spanning robotic perception, 2.5D terrain representation, motion planning and sampling-based predictive control.\nAn important part of my work is transferring methods from simulation to a real outdoor robot under onboard computation, sensing and communication constraints.\nBeyond my current PhD topic, I am broadly interested in robotics, autonomous systems, software, embedded systems and engineering projects that connect research with real-world implementation.\nI use Rhobtor as my online nickname for GitHub and technical projects."
   },
   {
-    "objectID": "about/index.html#research-interests",
-    "href": "about/index.html#research-interests",
+    "objectID": "about/index.html#research-and-technical-interests",
+    "href": "about/index.html#research-and-technical-interests",
     "title": "About",
-    "section": "",
-    "text": "Field robotics\nAutonomous navigation\nUnmanned ground vehicles\nTerrain-aware planning and control\n2.5D elevation mapping\nRobotic perception\nROS 2 and robotic software systems\nEmbedded GPU deployment\nSearch and rescue robotics"
+    "section": "Research and technical interests",
+    "text": "Research and technical interests\n\nRobotics and autonomous systems\nField robotics\nAutonomous navigation\nUnmanned ground vehicles\nTerrain-aware planning and control\nRobotic perception\n2.5D elevation mapping\nMotion planning and predictive control\nROS 2 and robotic software systems\nEmbedded GPU deployment\nSearch and rescue robotics\nEngineering and software projects"
   },
   {
     "objectID": "about/index.html#links",
     "href": "about/index.html#links",
     "title": "About",
+    "section": "Links",
+    "text": "Links\n\nGitHub\nLinkedIn\nEmail"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Luis Miguel Díaz Pichardo",
     "section": "",
-    "text": "GitHub: https://github.com/Rhobtor\nUniversity of Málaga profile: coming soon\nLinkedIn: coming soon\nEmail: luismidp7@gmail.com"
+    "text": "My current PhD research focuses on autonomous navigation for unmanned ground vehicles operating in unknown, unstructured and difficult terrain.\nI work across terrain perception, 2.5D mapping, planning and sampling-based predictive control, while remaining broadly interested in robotics, autonomous systems and related engineering problems.\nExplore my research Publications GitHub LinkedIn\n\n\n\nUniversity of Málaga PhD in Mechatronics Engineering Research line: Robotics and Intelligent Control Systems\nCurrent research ROBOTICS · AUTONOMOUS SYSTEMS · INTELLIGENT NAVIGATION\nOnline GitHub · @Rhobtor LinkedIn"
+  },
+  {
+    "objectID": "index.html#phd-researcher-in-robotics-and-mechatronics",
+    "href": "index.html#phd-researcher-in-robotics-and-mechatronics",
+    "title": "Luis Miguel Díaz Pichardo",
+    "section": "",
+    "text": "My current PhD research focuses on autonomous navigation for unmanned ground vehicles operating in unknown, unstructured and difficult terrain.\nI work across terrain perception, 2.5D mapping, planning and sampling-based predictive control, while remaining broadly interested in robotics, autonomous systems and related engineering problems.\nExplore my research Publications GitHub LinkedIn"
+  },
+  {
+    "objectID": "index.html#accepted-at-iros-2026",
+    "href": "index.html#accepted-at-iros-2026",
+    "title": "Luis Miguel Díaz Pichardo",
+    "section": "Accepted at IROS 2026",
+    "text": "Accepted at IROS 2026"
+  },
+  {
+    "objectID": "index.html#autonomous-ugv-navigation-in-unstructured-terrain",
+    "href": "index.html#autonomous-ugv-navigation-in-unstructured-terrain",
+    "title": "Luis Miguel Díaz Pichardo",
+    "section": "Autonomous UGV navigation in unstructured terrain",
+    "text": "Autonomous UGV navigation in unstructured terrain"
+  },
+  {
+    "objectID": "index.html#research-developed-from-simulation-to-real-robots",
+    "href": "index.html#research-developed-from-simulation-to-real-robots",
+    "title": "Luis Miguel Díaz Pichardo",
+    "section": "Research developed from simulation to real robots",
+    "text": "Research developed from simulation to real robots\nMy PhD currently investigates how UGVs can navigate autonomously in unknown outdoor terrain, with particular interest in field and search-and-rescue robotics.\nRead the complete research overview"
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "CURRENT PHD RESEARCH\n\n\n\nMy current PhD research focuses on enabling unmanned ground vehicles to navigate unknown and unstructured environments using onboard perception, terrain representations and real-time predictive control.\nThe central problem is not only to find a geometrically free route, but to reason about whether the terrain is traversable for a specific vehicle while the available map is incomplete and constantly changing.\nThese topics define my current doctoral research, while my broader interests extend across robotics, autonomous systems, perception, planning and control."
+  },
+  {
+    "objectID": "research/index.html#research-vision",
+    "href": "research/index.html#research-vision",
+    "title": "Research",
+    "section": "Research vision",
+    "text": "Research vision\nMy PhD connects the complete navigation chain rather than treating perception, planning and control as isolated components.\n\n\n1 · Sense\nRGB-D and LiDAR observations\n\n\n2 · Represent\nLocal and global 2.5D terrain maps\n\n\n3 · Reason\nTraversability, risk and unknown space\n\n\n4 · Navigate\nGlobal guidance and local predictive control\n\n\nThe methods are designed around a clear principle: learned or data-driven components may provide information or guidance, while vehicle motion remains governed by explicit planning, control and safety mechanisms."
+  },
+  {
+    "objectID": "research/index.html#published-and-accepted-work",
+    "href": "research/index.html#published-and-accepted-work",
+    "title": "Research",
+    "section": "Published and accepted work",
+    "text": "Published and accepted work\n\nIROS 2026 · ACCEPTED\n\nObservation-Conditioned Rollout Allocation for Sampling Model Predictive Control on Myopic Egocentric Elevation Maps\nThis work reallocates the sampling budget of a predictive controller according to the current egocentric terrain observation. It targets reactive navigation when the robot only sees a limited local map and must select useful motion hypotheses under real-time constraints.\nProject page Publication record"
+  },
+  {
+    "objectID": "research/index.html#ongoing-research-directions",
+    "href": "research/index.html#ongoing-research-directions",
+    "title": "Research",
+    "section": "Ongoing research directions",
+    "text": "Ongoing research directions\nThe following areas are active parts of my PhD. They are presented as ongoing research, not as completed publications.\n\n\nGlobal terrain-aware navigation from aerial DEMs\nNavigation using a global digital elevation model as prior information, combined with a live egocentric map acquired by the robot. The planner evaluates directional terrain properties, vehicle footprint, clearance, fall risk and unknown regions rather than treating the DEM as a conventional occupancy grid.\nCurrent focus: global terrain guidance, local map updates and fast replanning when the prior map no longer matches the scene.\n\n\nReactive navigation on egocentric elevation maps\nLocal navigation with a limited sensor horizon and no assumption of a complete global map. The controller evaluates terrain geometry, collision risk, feasible corridors and progress while accounting for car-like vehicle constraints.\nCurrent focus: terrain-aware MPPI, footprint validation, safer treatment of unknown space and robust obstacle avoidance.\n\n\nExploration and compact terrain memory\nExploration of bounded unknown areas using safe frontiers, terrain descriptors and compact snapshots of previously observed elevation maps. The objective is to retain useful terrain information without maintaining an unbounded dense map.\nCurrent focus: frontier evaluation, compressed terrain memory and reuse of prior observations during exploration.\n\n\nGoal-directed navigation without a prior map\nA longer-term direction in which the robot receives a target rather than a predefined path and must combine egocentric perception, remembered terrain structure and explicit navigation mechanisms to reach it efficiently.\nResearch question: how much compact terrain memory is needed to make better local and global decisions without constructing a full dense map?"
+  },
+  {
+    "objectID": "research/index.html#experimental-platform",
+    "href": "research/index.html#experimental-platform",
+    "title": "Research",
+    "section": "Experimental platform",
+    "text": "Experimental platform\nThe research is developed in simulation and transferred to a real car-like UGV equipped with onboard computing and multimodal perception.\n\n\nRobot\nOutdoor unmanned ground vehicle with car-like motion constraints\n\n\nPerception\nRGB-D cameras, 3D LiDAR, IMU and complementary sensing\n\n\nSoftware\nROS 2 Humble, real-time C++ control and GPU-enabled onboard processing\n\n\nEnvironment\nUnknown, uneven and partially observable outdoor terrain"
+  },
+  {
+    "objectID": "research/index.html#evaluation-priorities",
+    "href": "research/index.html#evaluation-priorities",
+    "title": "Research",
+    "section": "Evaluation priorities",
+    "text": "Evaluation priorities\nMethods are assessed not only by whether the robot reaches the goal, but also by collision rate, minimum terrain margin, path length, execution time, smoothness, unknown-space exposure and real-time computational cost.\n\nInterested in this work?\nI am open to research discussions and collaborations in field robotics, autonomous systems, navigation, perception, planning, control and related robotics topics.\nEmail me LinkedIn"
   },
   {
     "objectID": "publications/index.html",
     "href": "publications/index.html",
     "title": "Publications",
     "section": "",
-    "text": "This page lists my academic publications, conference contributions, posters and related material."
+    "text": "ACADEMIC OUTPUT\n\n\n\nPeer-reviewed papers, conference contributions and accompanying public material."
   },
   {
     "objectID": "publications/index.html#conference-papers",
     "href": "publications/index.html#conference-papers",
     "title": "Publications",
     "section": "Conference papers",
-    "text": "Conference papers\n\nIROS 2026\n\nTitle: Coming soon\nAuthors: Coming soon\nVenue: IEEE/RSJ International Conference on Intelligent Robots and Systems, IROS 2026\nStatus: Accepted\nSubmitted: Coming soon\nAccepted: Coming soon\nCamera-ready: Pending\nPublic version: Pending\nShort summary:\nA short public summary will be added here once the final version is ready.\nLinks:\n- Paper: pending\n- Project page: pending\n- Code: pending\n- Video: pending"
+    "text": "Conference papers\n\nACCEPTED\n\nObservation-Conditioned Rollout Allocation for Sampling Model Predictive Control on Myopic Egocentric Elevation Maps\nIEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026)\nObservation-conditioned sampling for real-time predictive navigation using limited egocentric 2.5D terrain information. Evaluated in simulation and on a real unmanned ground vehicle.\nProject page Paper · available after official publication"
   },
   {
-    "objectID": "publications/index.html#preprints",
-    "href": "publications/index.html#preprints",
+    "objectID": "publications/index.html#conference-material",
+    "href": "publications/index.html#conference-material",
     "title": "Publications",
-    "section": "Preprints",
-    "text": "Preprints\nComing soon."
-  },
-  {
-    "objectID": "publications/index.html#posters-and-presentations",
-    "href": "publications/index.html#posters-and-presentations",
-    "title": "Publications",
-    "section": "Posters and presentations",
-    "text": "Posters and presentations\nComing soon."
+    "section": "Conference material",
+    "text": "Conference material\nThe public paper, presentation, poster, video and citation record will be linked here as they become available."
   }
 ]

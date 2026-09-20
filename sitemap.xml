@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Rhobtor.github.io/projects/index.html</loc>
-    <lastmod>2026-06-27T20:35:07.676Z</lastmod>
+    <loc>https://rhobtor.github.io/projects/index.html</loc>
+    <lastmod>2026-09-20T17:59:58.627Z</lastmod>
   </url>
   <url>
-    <loc>https://Rhobtor.github.io/research/index.html</loc>
-    <lastmod>2026-06-27T20:35:07.676Z</lastmod>
+    <loc>https://rhobtor.github.io/research/iros2026/index.html</loc>
+    <lastmod>2026-09-20T18:31:46.683Z</lastmod>
   </url>
   <url>
-    <loc>https://Rhobtor.github.io/index.html</loc>
-    <lastmod>2026-08-25T16:14:34.352Z</lastmod>
+    <loc>https://rhobtor.github.io/about/index.html</loc>
+    <lastmod>2026-09-20T18:16:57.319Z</lastmod>
   </url>
   <url>
-    <loc>https://Rhobtor.github.io/about/index.html</loc>
-    <lastmod>2026-06-27T20:35:07.676Z</lastmod>
+    <loc>https://rhobtor.github.io/index.html</loc>
+    <lastmod>2026-09-20T18:26:27.897Z</lastmod>
   </url>
   <url>
-    <loc>https://Rhobtor.github.io/publications/index.html</loc>
-    <lastmod>2026-06-27T20:35:07.676Z</lastmod>
+    <loc>https://rhobtor.github.io/research/index.html</loc>
+    <lastmod>2026-09-20T18:16:57.306Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rhobtor.github.io/publications/index.html</loc>
+    <lastmod>2026-09-20T17:45:55.042Z</lastmod>
   </url>
 </urlset>

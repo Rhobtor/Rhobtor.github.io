@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research</title>
+<title>Research – Luis Miguel Díaz Pichardo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -78,6 +79,11 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Luis Miguel Díaz Pichardo</span>
+    </a>
+  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -129,27 +135,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#research-areas" id="toc-research-areas" class="nav-link active" data-scroll-target="#research-areas">Research areas</a>
-  <ul class="collapse">
-  <li><a href="#terrain-aware-navigation" id="toc-terrain-aware-navigation" class="nav-link" data-scroll-target="#terrain-aware-navigation">Terrain-aware navigation</a></li>
-  <li><a href="#robotic-perception" id="toc-robotic-perception" class="nav-link" data-scroll-target="#robotic-perception">Robotic perception</a></li>
-  <li><a href="#predictive-control-and-learning-based-guidance" id="toc-predictive-control-and-learning-based-guidance" class="nav-link" data-scroll-target="#predictive-control-and-learning-based-guidance">Predictive control and learning-based guidance</a></li>
-  <li><a href="#real-world-robotic-deployment" id="toc-real-world-robotic-deployment" class="nav-link" data-scroll-target="#real-world-robotic-deployment">Real-world robotic deployment</a></li>
-  </ul></li>
-  <li><a href="#long-term-objective" id="toc-long-term-objective" class="nav-link" data-scroll-target="#long-term-objective">Long-term objective</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -158,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -170,30 +161,107 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>My PhD research focuses on robotic systems for unmanned ground vehicles operating in unknown and unstructured environments.</p>
-<p>The main goal is to develop methods that allow ground robots to perceive local terrain, estimate traversability, react to obstacles, and generate safe motion commands in real time.</p>
-<section id="research-areas" class="level2">
-<h2 class="anchored" data-anchor-id="research-areas">Research areas</h2>
-<section id="terrain-aware-navigation" class="level3">
-<h3 class="anchored" data-anchor-id="terrain-aware-navigation">Terrain-aware navigation</h3>
-<p>I work on navigation methods that use local 2.5D terrain maps to reason about elevation, slope, obstacles, unknown space and traversability.</p>
+<div class="page-intro">
+<p class="eyebrow">
+CURRENT PHD RESEARCH
+</p>
+<section id="autonomous-ugv-navigation-in-unstructured-terrain" class="level1 unlisted">
+<h1 class="unlisted">Autonomous UGV navigation in unstructured terrain</h1>
+<p>My current PhD research focuses on enabling unmanned ground vehicles to navigate unknown and unstructured environments using onboard perception, terrain representations and real-time predictive control.</p>
+<p>The central problem is not only to find a geometrically free route, but to reason about whether the terrain is traversable for a specific vehicle while the available map is incomplete and constantly changing.</p>
+<p>These topics define my current doctoral research, while my broader interests extend across robotics, autonomous systems, perception, planning and control.</p>
 </section>
-<section id="robotic-perception" class="level3">
-<h3 class="anchored" data-anchor-id="robotic-perception">Robotic perception</h3>
-<p>My work involves RGB-D cameras, LiDAR sensors, thermal cameras and onboard perception pipelines for real robotic platforms.</p>
+</div>
+<section id="research-vision" class="level2">
+<h2 class="anchored" data-anchor-id="research-vision">Research vision</h2>
+<p>My PhD connects the complete navigation chain rather than treating perception, planning and control as isolated components.</p>
+<div class="research-flow">
+<div class="flow-step">
+<p><strong>1 · Sense</strong></p>
+<p>RGB-D and LiDAR observations</p>
+</div>
+<div class="flow-step">
+<p><strong>2 · Represent</strong></p>
+<p>Local and global 2.5D terrain maps</p>
+</div>
+<div class="flow-step">
+<p><strong>3 · Reason</strong></p>
+<p>Traversability, risk and unknown space</p>
+</div>
+<div class="flow-step">
+<p><strong>4 · Navigate</strong></p>
+<p>Global guidance and local predictive control</p>
+</div>
+</div>
+<p>The methods are designed around a clear principle: learned or data-driven components may provide information or guidance, while vehicle motion remains governed by explicit planning, control and safety mechanisms.</p>
 </section>
-<section id="predictive-control-and-learning-based-guidance" class="level3">
-<h3 class="anchored" data-anchor-id="predictive-control-and-learning-based-guidance">Predictive control and learning-based guidance</h3>
-<p>I am interested in combining model predictive control methods, such as MPPI, with learned guidance and local path refinement.</p>
+<section id="published-and-accepted-work" class="level2">
+<h2 class="anchored" data-anchor-id="published-and-accepted-work">Published and accepted work</h2>
+<div class="publication-highlight">
+<p><span class="status-badge">IROS 2026 · ACCEPTED</span></p>
+<section id="observation-conditioned-rollout-allocation-for-sampling-model-predictive-control-on-myopic-egocentric-elevation-maps" class="level3">
+<h3 class="anchored" data-anchor-id="observation-conditioned-rollout-allocation-for-sampling-model-predictive-control-on-myopic-egocentric-elevation-maps">Observation-Conditioned Rollout Allocation for Sampling Model Predictive Control on Myopic Egocentric Elevation Maps</h3>
+<p>This work reallocates the sampling budget of a predictive controller according to the current egocentric terrain observation. It targets reactive navigation when the robot only sees a limited local map and must select useful motion hypotheses under real-time constraints.</p>
+<p><a href="iros2026/" class="btn btn-primary">Project page</a> <a href="../publications/" class="btn btn-outline-primary">Publication record</a></p>
 </section>
-<section id="real-world-robotic-deployment" class="level3">
-<h3 class="anchored" data-anchor-id="real-world-robotic-deployment">Real-world robotic deployment</h3>
-<p>A significant part of my work focuses on practical deployment issues: ROS 2, Docker, embedded GPUs, Jetson platforms, multi-machine communication, sensors and real-time constraints.</p>
+</div>
 </section>
+<section id="ongoing-research-directions" class="level2">
+<h2 class="anchored" data-anchor-id="ongoing-research-directions">Ongoing research directions</h2>
+<p>The following areas are active parts of my PhD. They are presented as ongoing research, not as completed publications.</p>
+<div class="research-grid">
+<section id="global-terrain-aware-navigation-from-aerial-dems" class="level3 research-card research-card-accent">
+<h3 class="anchored" data-anchor-id="global-terrain-aware-navigation-from-aerial-dems">Global terrain-aware navigation from aerial DEMs</h3>
+<p>Navigation using a global digital elevation model as prior information, combined with a live egocentric map acquired by the robot. The planner evaluates directional terrain properties, vehicle footprint, clearance, fall risk and unknown regions rather than treating the DEM as a conventional occupancy grid.</p>
+<p><strong>Current focus:</strong> global terrain guidance, local map updates and fast replanning when the prior map no longer matches the scene.</p>
 </section>
-<section id="long-term-objective" class="level2">
-<h2 class="anchored" data-anchor-id="long-term-objective">Long-term objective</h2>
-<p>The long-term objective of my PhD is to develop terrain-aware navigation methods for real robots in search and rescue scenarios, where the environment is unknown, partially observable and difficult to model in advance.</p>
+<section id="reactive-navigation-on-egocentric-elevation-maps" class="level3 research-card">
+<h3 class="anchored" data-anchor-id="reactive-navigation-on-egocentric-elevation-maps">Reactive navigation on egocentric elevation maps</h3>
+<p>Local navigation with a limited sensor horizon and no assumption of a complete global map. The controller evaluates terrain geometry, collision risk, feasible corridors and progress while accounting for car-like vehicle constraints.</p>
+<p><strong>Current focus:</strong> terrain-aware MPPI, footprint validation, safer treatment of unknown space and robust obstacle avoidance.</p>
+</section>
+<section id="exploration-and-compact-terrain-memory" class="level3 research-card">
+<h3 class="anchored" data-anchor-id="exploration-and-compact-terrain-memory">Exploration and compact terrain memory</h3>
+<p>Exploration of bounded unknown areas using safe frontiers, terrain descriptors and compact snapshots of previously observed elevation maps. The objective is to retain useful terrain information without maintaining an unbounded dense map.</p>
+<p><strong>Current focus:</strong> frontier evaluation, compressed terrain memory and reuse of prior observations during exploration.</p>
+</section>
+<section id="goal-directed-navigation-without-a-prior-map" class="level3 research-card">
+<h3 class="anchored" data-anchor-id="goal-directed-navigation-without-a-prior-map">Goal-directed navigation without a prior map</h3>
+<p>A longer-term direction in which the robot receives a target rather than a predefined path and must combine egocentric perception, remembered terrain structure and explicit navigation mechanisms to reach it efficiently.</p>
+<p><strong>Research question:</strong> how much compact terrain memory is needed to make better local and global decisions without constructing a full dense map?</p>
+</section>
+</div>
+</section>
+<section id="experimental-platform" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-platform">Experimental platform</h2>
+<p>The research is developed in simulation and transferred to a real car-like UGV equipped with onboard computing and multimodal perception.</p>
+<div class="fact-grid">
+<div class="fact">
+<p><strong>Robot</strong></p>
+<p>Outdoor unmanned ground vehicle with car-like motion constraints</p>
+</div>
+<div class="fact">
+<p><strong>Perception</strong></p>
+<p>RGB-D cameras, 3D LiDAR, IMU and complementary sensing</p>
+</div>
+<div class="fact">
+<p><strong>Software</strong></p>
+<p>ROS 2 Humble, real-time C++ control and GPU-enabled onboard processing</p>
+</div>
+<div class="fact">
+<p><strong>Environment</strong></p>
+<p>Unknown, uneven and partially observable outdoor terrain</p>
+</div>
+</div>
+</section>
+<section id="evaluation-priorities" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation-priorities">Evaluation priorities</h2>
+<p>Methods are assessed not only by whether the robot reaches the goal, but also by collision rate, minimum terrain margin, path length, execution time, smoothness, unknown-space exposure and real-time computational cost.</p>
+<section id="interested-in-this-work" class="level3 research-cta">
+<h3 class="anchored" data-anchor-id="interested-in-this-work">Interested in this work?</h3>
+<p>I am open to research discussions and collaborations in field robotics, autonomous systems, navigation, perception, planning, control and related robotics topics.</p>
+<p><a href="mailto:luismidp7@gmail.com" class="btn btn-primary">Email me</a> <a href="https://www.linkedin.com/in/luis-miguel-diaz-pichardo-2255b3180/" class="btn btn-outline-primary">LinkedIn</a></p>
+</section>
 
 
 </section>
@@ -271,7 +339,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Rhobtor\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/rhobtor\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -285,6 +353,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -599,8 +672,22 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Luis Miguel Díaz Pichardo</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Robotics and Mechatronics · University of Málaga</p>
+</div>
+  </div>
+</footer>
 
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
