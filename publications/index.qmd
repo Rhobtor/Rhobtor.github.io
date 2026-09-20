@@ -1,37 +1,32 @@
 ---
 title: "Publications"
+page-layout: full
+toc: false
 ---
 
-This page lists my academic publications, conference contributions, posters and related material.
+::: {.page-intro .page-intro-compact}
+<p class="eyebrow">ACADEMIC OUTPUT</p>
+
+# Publications {.unlisted}
+
+Peer-reviewed papers, conference contributions and accompanying public material.
+:::
 
 ## Conference papers
 
-### IROS 2026
+::: {.paper-card .paper-card-featured}
+<span class="status-badge">ACCEPTED</span>
 
-::: {.paper-card}
-**Title:** Coming soon  
-**Authors:** Coming soon  
-**Venue:** IEEE/RSJ International Conference on Intelligent Robots and Systems, IROS 2026  
-**Status:** Accepted  
-**Submitted:** Coming soon  
-**Accepted:** Coming soon  
-**Camera-ready:** Pending  
-**Public version:** Pending  
+### Observation-Conditioned Rollout Allocation for Sampling Model Predictive Control on Myopic Egocentric Elevation Maps
 
-**Short summary:**  
-A short public summary will be added here once the final version is ready.
+**IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026)**
 
-**Links:**  
-- Paper: pending  
-- Project page: pending  
-- Code: pending  
-- Video: pending  
+Observation-conditioned sampling for real-time predictive navigation using limited egocentric 2.5D terrain information. Evaluated in simulation and on a real unmanned ground vehicle.
+
+[Project page](../research/iros2026/){.btn .btn-primary}
+<span class="link-pending">Paper · available after official publication</span>
 :::
 
-## Preprints
+## Conference material
 
-Coming soon.
-
-## Posters and presentations
-
-Coming soon.
+The public paper, presentation, poster, video and citation record will be linked here as they become available.

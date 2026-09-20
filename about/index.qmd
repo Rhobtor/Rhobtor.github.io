@@ -1,32 +1,44 @@
 ---
 title: "About"
+page-layout: full
+toc: false
 ---
 
-# Luis Miguel Díaz Pichardo
+::: {.page-intro}
+<p class="eyebrow">ABOUT</p>
+
+# Luis Miguel Díaz Pichardo {.unlisted}
 
 **@Rhobtor**
 
-I am a PhD student in Robotics and Mechatronics at the University of Málaga.
+I am a PhD researcher in Robotics and Mechatronics at the University of Málaga, Spain.
 
-My work focuses on field robotics, autonomous navigation, robotic perception, and real-world deployment of unmanned ground vehicles in unstructured environments.
+My current doctoral research focuses on autonomous navigation for unmanned ground vehicles operating in unknown and unstructured terrain. I develop and evaluate methods spanning robotic perception, 2.5D terrain representation, motion planning and sampling-based predictive control.
+
+An important part of my work is transferring methods from simulation to a real outdoor robot under onboard computation, sensing and communication constraints.
+
+Beyond my current PhD topic, I am broadly interested in robotics, autonomous systems, software, embedded systems and engineering projects that connect research with real-world implementation.
 
 I use **Rhobtor** as my online nickname for GitHub and technical projects.
+:::
 
-## Research interests
+## Research and technical interests
 
+- Robotics and autonomous systems
 - Field robotics
 - Autonomous navigation
 - Unmanned ground vehicles
 - Terrain-aware planning and control
-- 2.5D elevation mapping
 - Robotic perception
+- 2.5D elevation mapping
+- Motion planning and predictive control
 - ROS 2 and robotic software systems
 - Embedded GPU deployment
 - Search and rescue robotics
+- Engineering and software projects
 
 ## Links
 
-- GitHub: <https://github.com/Rhobtor>
-- University of Málaga profile: coming soon
-- LinkedIn: coming soon
-- Email: <luismidp7@gmail.com>
+- [GitHub](https://github.com/Rhobtor)
+- [LinkedIn](https://www.linkedin.com/in/luis-miguel-diaz-pichardo-2255b3180/)
+- [Email](mailto:luismidp7@gmail.com)

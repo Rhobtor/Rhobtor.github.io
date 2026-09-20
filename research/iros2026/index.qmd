@@ -1,0 +1,172 @@
+---
+title: "IROS 2026"
+page-layout: full
+toc: true
+toc-depth: 2
+---
+
+::: {.iros-hero}
+<span class="status-badge">IROS 2026 · ACCEPTED</span>
+
+# Observation-Conditioned Rollout Allocation for Sampling Model Predictive Control on Myopic Egocentric Elevation Maps {.unlisted}
+
+<p class="iros-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems · IROS 2026</p>
+
+Reactive local navigation for a car-like UGV using observation-conditioned predictive sampling and myopic egocentric 2.5D terrain information.
+
+[Research overview](../){.btn .btn-light}
+[Publications](../../publications/){.btn .btn-outline-light}
+:::
+
+## Overview
+
+Sampling-based Model Predictive Control evaluates many candidate motions during each control cycle.
+
+When the robot only has access to a limited egocentric representation of its surroundings, distributing a fixed rollout budget uniformly can spend valuable samples in directions that are not especially useful for the current terrain observation.
+
+This work studies how the available rollout budget can instead be allocated according to what the robot currently observes.
+
+The proposed method concentrates predictive sampling in locally relevant regions while preserving explicit trajectory evaluation and model-based control.
+
+## Real-world demonstration
+
+The method was evaluated on a real outdoor car-like unmanned ground vehicle using onboard perception and computation.
+
+::: {.paper-video}
+<video controls muted playsinline preload="metadata">
+  <source src="media/IROS2026_web.mp4" type="video/mp4">
+  Your browser does not support embedded video.
+</video>
+:::
+
+The video shows the navigation system operating on the real platform during an outdoor field experiment.
+
+## Navigation problem
+
+The robot operates with a limited sensor horizon and therefore does not have access to a complete map of the environment.
+
+Navigation decisions must be made from a myopic egocentric 2.5D terrain representation while satisfying the motion constraints of a car-like vehicle and the real-time requirements of the predictive controller.
+
+The main challenge addressed in this work is therefore not to increase the total number of predictive samples, but to use a fixed sampling budget more effectively.
+
+## Proposed approach
+
+The method modifies how the available MPPI rollouts are distributed around the robot.
+
+:::: {.method-grid}
+::: {.method-step}
+### 1 · Observe
+
+The robot builds an egocentric 2.5D representation of the terrain currently visible to its sensors.
+:::
+
+::: {.method-step}
+### 2 · Allocate
+
+The fixed rollout budget is distributed across structured local regions according to the current observation.
+:::
+
+::: {.method-step}
+### 3 · Evaluate
+
+Candidate trajectories are propagated and evaluated by the predictive controller before the final vehicle command is selected.
+:::
+::::
+
+The observation-conditioned component influences the sampling process. It does not directly command the robot.
+
+## Observation-conditioned rollout allocation
+
+The local sampling space is divided into structured regions around the vehicle.
+
+Rather than assigning the same amount of sampling effort everywhere, the allocation changes according to the terrain currently observed by the robot.
+
+Conceptually, the navigation loop is:
+
+```text
+Egocentric terrain observation
+            ↓
+Local region analysis
+            ↓
+Observation-conditioned rollout allocation
+            ↓
+MPPI candidate trajectories
+            ↓
+Trajectory evaluation
+            ↓
+Vehicle command
+```
+
+The total rollout budget remains bounded, allowing the method to remain suitable for real-time execution.
+
+## Experimental platform
+
+The system was evaluated in simulation and on a real outdoor robotic platform.
+
+:::: {.fact-grid}
+::: {.fact}
+**Platform**
+
+Car-like unmanned ground vehicle
+:::
+
+::: {.fact}
+**Representation**
+
+Myopic egocentric 2.5D elevation maps
+:::
+
+::: {.fact}
+**Controller**
+
+Sampling-based Model Predictive Control
+:::
+
+::: {.fact}
+**Validation**
+
+Simulation and real-world field experiments
+:::
+::::
+
+## Evaluation
+
+The experimental study compares observation-conditioned rollout allocation with uniform sampling under the same general predictive-control setting.
+
+The evaluation considers navigation performance together with real-time execution, including metrics related to success, safety events, trajectory behaviour and computational latency.
+
+## Main contribution
+
+The central contribution is a method for reallocating a fixed MPPI sampling budget according to the current egocentric terrain observation.
+
+This allows the predictive controller to spend more of its available computation on locally relevant motion hypotheses without replacing the explicit model-based control process.
+
+## Relation to my PhD
+
+This paper represents one stage of my current doctoral research on autonomous UGV navigation in unstructured terrain.
+
+It focuses on reactive local navigation using only the terrain currently visible around the robot.
+
+My ongoing research extends this direction toward terrain-aware local control, navigation using global DEM information, autonomous exploration and compact terrain memory.
+
+[See the complete research overview](../){.btn .btn-primary}
+
+## Material
+
+Additional public material will be linked here as it becomes available:
+
+- Paper
+- IEEE Xplore page
+- IROS 2026 poster
+- Conference presentation
+- Demonstration video
+- Supplementary material
+- Public code, where applicable
+
+::: {.research-cta}
+### Questions about this work?
+
+[Contact me](mailto:luismidp7@gmail.com){.btn .btn-primary}
+[LinkedIn](https://www.linkedin.com/in/luis-miguel-diaz-pichardo-2255b3180/){.btn .btn-outline-primary}
+[Back to Research](../){.btn .btn-outline-primary}
+:::

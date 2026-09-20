@@ -1,42 +1,110 @@
 ---
 page-layout: full
-
+title: "Luis Miguel Díaz Pichardo"
+title-block-banner: false
+toc: false
 ---
 
-::: {.hero}
+::: {.hero .hero-home}
+::: {.hero-copy}
+
+
 # Luis Miguel Díaz Pichardo {.unlisted}
 
-## @Rhobtor {.unlisted}
+## PhD Researcher in Robotics and Mechatronics {.unlisted}
 
-**PhD Student in Robotics and Mechatronics**  
-University of Málaga
+My current PhD research focuses on autonomous navigation for unmanned ground vehicles operating in unknown, unstructured and difficult terrain.
 
-I work on field robotics, terrain-aware navigation, robotic perception, ROS 2 systems, and real-world unmanned ground vehicles.
+I work across terrain perception, 2.5D mapping, planning and sampling-based predictive control, while remaining broadly interested in robotics, autonomous systems and related engineering problems.
 
-This website collects my academic work, research projects, publications, software, and technical notes developed during my PhD.
-
-[GitHub](https://github.com/Rhobtor){.btn .btn-primary}
-[Research](research/){.btn .btn-secondary}
-[Projects](projects/){.btn .btn-secondary}
-[Publications](publications/){.btn .btn-secondary}
+[Explore my research](research/){.btn .btn-primary}
+[Publications](publications/){.btn .btn-outline-primary}
+[GitHub](https://github.com/Rhobtor){.btn .btn-outline-dark}
+[LinkedIn](https://www.linkedin.com/in/luis-miguel-diaz-pichardo-2255b3180/){.btn .btn-outline-dark}
 :::
 
-## Current focus
+::: {.hero-meta}
+**University of Málaga**<br>
+PhD in Mechatronics Engineering
+Research line: Robotics and Intelligent Control Systems
 
-- Terrain-aware navigation for unmanned ground vehicles.
-- 2.5D elevation mapping and traversability estimation.
-- Robotic perception using RGB-D, LiDAR and RGB-T sensors.
-- MPPI-based local control and learning-based guidance.
-- Real-world deployment with ROS 2, Docker and embedded GPU platforms.
+**Current research**<br>
+ROBOTICS · AUTONOMOUS SYSTEMS · INTELLIGENT NAVIGATION
 
-## Highlight
+**Online**<br>
+[GitHub · @Rhobtor](https://github.com/Rhobtor)<br>
+[LinkedIn](https://www.linkedin.com/in/luis-miguel-diaz-pichardo-2255b3180/)
+:::
+:::
 
-### IROS 2026
+::: {.section-heading}
+<p class="eyebrow">LATEST WORK</p>
 
-I have an accepted paper at **IROS 2026**. A dedicated page with the final title, short summary, authors, links and public material will be added once the official version becomes available.
+## Accepted at IROS 2026
+:::
 
-## Selected links
+::: {.featured-paper}
+::: {.featured-paper-copy}
+<span class="status-badge">IROS 2026 · ACCEPTED</span>
 
-- GitHub: https://github.com/Rhobtor
-- University of Málaga profile: coming soon
-- LinkedIn: coming soon
+### Observation-Conditioned Rollout Allocation for Sampling Model Predictive Control on Myopic Egocentric Elevation Maps
+
+This work studies how to allocate predictive-control rollouts according to the robot's current local observation. The objective is to use a limited sampling budget more effectively while navigating with only a myopic 2.5D elevation map.
+
+[View the IROS 2026 project](research/iros2026/){.btn .btn-light}
+:::
+
+::: {.featured-paper-meta}
+**Platform**<br>
+Car-like unmanned ground vehicle
+
+**Representation**<br>
+Egocentric 2.5D elevation maps
+
+**Control**<br>
+Sampling-based model predictive control
+
+**Validation**<br>
+Simulation and real-world experiments
+:::
+:::
+
+::: {.section-heading}
+<p class="eyebrow">CURRENT PHD RESEARCH</p>
+
+## Autonomous UGV navigation in unstructured terrain
+:::
+
+:::: {.research-grid}
+::: {.research-card}
+### Terrain representation
+
+Elevation, slope, roughness, clearance, unknown space and vehicle-footprint constraints represented in local and global terrain maps.
+:::
+
+::: {.research-card}
+### Planning and guidance
+
+Terrain-aware global routes, local guidance and reactive decisions for partially observable environments.
+:::
+
+::: {.research-card}
+### Predictive control
+
+Real-time MPPI methods that evaluate feasible motion while preserving explicit control and safety constraints.
+:::
+
+::: {.research-card}
+### Real-robot deployment
+
+ROS 2 pipelines integrating RGB-D cameras, LiDAR, embedded GPU computation and field experiments.
+:::
+::::
+
+::: {.home-closing}
+## Research developed from simulation to real robots
+
+My PhD currently investigates how UGVs can navigate autonomously in unknown outdoor terrain, with particular interest in field and search-and-rescue robotics.
+
+[Read the complete research overview](research/){.btn .btn-primary}
+:::

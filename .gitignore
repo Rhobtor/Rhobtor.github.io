@@ -1,1 +1,5 @@
-/.quarto/
+_site/
+.quarto/
+*:Zone.Identifier
+about.zip
+projects.zip

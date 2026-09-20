@@ -1,29 +1,137 @@
 ---
 title: "Research"
+page-layout: full
+toc: false
 ---
 
-My PhD research focuses on robotic systems for unmanned ground vehicles operating in unknown and unstructured environments.
+::: {.page-intro}
+<p class="eyebrow">CURRENT PHD RESEARCH</p>
 
-The main goal is to develop methods that allow ground robots to perceive local terrain, estimate traversability, react to obstacles, and generate safe motion commands in real time.
+# Autonomous UGV navigation in unstructured terrain {.unlisted}
 
-## Research areas
+My current PhD research focuses on enabling unmanned ground vehicles to navigate unknown and unstructured environments using onboard perception, terrain representations and real-time predictive control.
 
-### Terrain-aware navigation
+The central problem is not only to find a geometrically free route, but to reason about whether the terrain is traversable for a specific vehicle while the available map is incomplete and constantly changing.
 
-I work on navigation methods that use local 2.5D terrain maps to reason about elevation, slope, obstacles, unknown space and traversability.
+These topics define my current doctoral research, while my broader interests extend across robotics, autonomous systems, perception, planning and control.
+:::
 
-### Robotic perception
+## Research vision
 
-My work involves RGB-D cameras, LiDAR sensors, thermal cameras and onboard perception pipelines for real robotic platforms.
+My PhD connects the complete navigation chain rather than treating perception, planning and control as isolated components.
 
-### Predictive control and learning-based guidance
+:::: {.research-flow}
+::: {.flow-step}
+**1 · Sense**
 
-I am interested in combining model predictive control methods, such as MPPI, with learned guidance and local path refinement.
+RGB-D and LiDAR observations
+:::
+::: {.flow-step}
+**2 · Represent**
 
-### Real-world robotic deployment
+Local and global 2.5D terrain maps
+:::
+::: {.flow-step}
+**3 · Reason**
 
-A significant part of my work focuses on practical deployment issues: ROS 2, Docker, embedded GPUs, Jetson platforms, multi-machine communication, sensors and real-time constraints.
+Traversability, risk and unknown space
+:::
+::: {.flow-step}
+**4 · Navigate**
 
-## Long-term objective
+Global guidance and local predictive control
+:::
+::::
 
-The long-term objective of my PhD is to develop terrain-aware navigation methods for real robots in search and rescue scenarios, where the environment is unknown, partially observable and difficult to model in advance.
+The methods are designed around a clear principle: learned or data-driven components may provide information or guidance, while vehicle motion remains governed by explicit planning, control and safety mechanisms.
+
+## Published and accepted work
+
+::: {.publication-highlight}
+<span class="status-badge">IROS 2026 · ACCEPTED</span>
+
+### Observation-Conditioned Rollout Allocation for Sampling Model Predictive Control on Myopic Egocentric Elevation Maps
+
+This work reallocates the sampling budget of a predictive controller according to the current egocentric terrain observation. It targets reactive navigation when the robot only sees a limited local map and must select useful motion hypotheses under real-time constraints.
+
+[Project page](iros2026/){.btn .btn-primary}
+[Publication record](../publications/){.btn .btn-outline-primary}
+:::
+
+## Ongoing research directions
+
+The following areas are active parts of my PhD. They are presented as ongoing research, not as completed publications.
+
+:::: {.research-grid}
+::: {.research-card .research-card-accent}
+### Global terrain-aware navigation from aerial DEMs
+
+Navigation using a global digital elevation model as prior information, combined with a live egocentric map acquired by the robot. The planner evaluates directional terrain properties, vehicle footprint, clearance, fall risk and unknown regions rather than treating the DEM as a conventional occupancy grid.
+
+**Current focus:** global terrain guidance, local map updates and fast replanning when the prior map no longer matches the scene.
+:::
+
+::: {.research-card}
+### Reactive navigation on egocentric elevation maps
+
+Local navigation with a limited sensor horizon and no assumption of a complete global map. The controller evaluates terrain geometry, collision risk, feasible corridors and progress while accounting for car-like vehicle constraints.
+
+**Current focus:** terrain-aware MPPI, footprint validation, safer treatment of unknown space and robust obstacle avoidance.
+:::
+
+::: {.research-card}
+### Exploration and compact terrain memory
+
+Exploration of bounded unknown areas using safe frontiers, terrain descriptors and compact snapshots of previously observed elevation maps. The objective is to retain useful terrain information without maintaining an unbounded dense map.
+
+**Current focus:** frontier evaluation, compressed terrain memory and reuse of prior observations during exploration.
+:::
+
+::: {.research-card}
+### Goal-directed navigation without a prior map
+
+A longer-term direction in which the robot receives a target rather than a predefined path and must combine egocentric perception, remembered terrain structure and explicit navigation mechanisms to reach it efficiently.
+
+**Research question:** how much compact terrain memory is needed to make better local and global decisions without constructing a full dense map?
+:::
+::::
+
+## Experimental platform
+
+The research is developed in simulation and transferred to a real car-like UGV equipped with onboard computing and multimodal perception.
+
+:::: {.fact-grid}
+::: {.fact}
+**Robot**
+
+Outdoor unmanned ground vehicle with car-like motion constraints
+:::
+::: {.fact}
+**Perception**
+
+RGB-D cameras, 3D LiDAR, IMU and complementary sensing
+:::
+::: {.fact}
+**Software**
+
+ROS 2 Humble, real-time C++ control and GPU-enabled onboard processing
+:::
+::: {.fact}
+**Environment**
+
+Unknown, uneven and partially observable outdoor terrain
+:::
+::::
+
+## Evaluation priorities
+
+Methods are assessed not only by whether the robot reaches the goal, but also by collision rate, minimum terrain margin, path length, execution time, smoothness, unknown-space exposure and real-time computational cost.
+
+::: {.research-cta}
+### Interested in this work?
+
+I am open to research discussions and collaborations in field robotics, autonomous systems, navigation, perception, planning, control and related robotics topics.
+
+[Email me](mailto:luismidp7@gmail.com){.btn .btn-primary}
+[LinkedIn](https://www.linkedin.com/in/luis-miguel-diaz-pichardo-2255b3180/){.btn .btn-outline-primary}
+:::
